@@ -1,0 +1,26 @@
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.1/math.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          displayAlign: "left",
+          displayIndent: "2em"
+        });
+        </script>
+        
+</head>
+<body>
+<h1>行列計算演習</h1>
+
+問題番号: <input type="number" id="seed"><input type="button" value="開く" onclick="newProblems()"><br>
+行数・列数の最大値: <input type="number" value="4" id="maxsize"><br>
+成分の範囲: <input type="number" value="-3" id="minnum">≦x≦<input type="number" value="3" id="maxnum">
+<div id="problem-area">
+    <p>(1)<span id="problem0"></span> <input type="button"  id="button0" value="答え" onclick="printAnswer(0)"><span id="answer0"></span></p>
+    <p>(2)<span id="problem1"></span> <input type="button" id="button1" value="答え" onclick="printAnswer(1)"><span id="answer1"></span></p>
+    <p>(3)<span id="problem2"></span> <input type="button" id="button2" value="答え" onclick="printAnswer(2)"><span id="answer2"></span></p>
+    <p>(4)<span id="problem3"></span> <input type="button" id="button3" value="答え" onclick="printAnswer(3)"><span id="answer3"></span></p>
+    <p>(5)<span id="problem4"></span> <input type="button" id="button4" value="答え" onclick="printAnswer(4)"><span id="answer4"></span></p>
+</div>
+</body>
+<script src="script.js"></script>
